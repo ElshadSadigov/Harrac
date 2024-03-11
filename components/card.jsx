@@ -42,7 +42,7 @@ const Card = () => {
                 <span className='font-medium text-[#050123]'>100 ₼</span>
             </div>
             <div className='flex justify-between items-center w-full mt-[20px]'>
-                <Link href='/' className='flex items-center gap-[5px] text-[#fff] stroke-[1.5px] px-[22px] py-[8px] bg-[#2335cc] rounded-[8px]'>
+                <Link href='/' className='flex items-center gap-[5px] text-[#fff] stroke-[1.5px] px-[22px] py-[8px] bg-[#1ea59a] rounded-[8px]'>
                     Təklif et
                     <Image src={rightIcon} alt='Right icon'/>
                 </Link>

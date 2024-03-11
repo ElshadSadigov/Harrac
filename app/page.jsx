@@ -16,7 +16,6 @@ import sticker4 from '../public/imgs/sticker-img4.jpeg'
 import Image from "next/image";
 import Card from "@/components/card";
 import AboutCard from "@/components/aboutCard";
-import NewsCard from "@/components/newsCard";
 import IndicatorCard from "@/components/indicatorCard";
 
 
@@ -161,35 +160,19 @@ export default function Home() {
             }
           </div>
           <div className="flex justify-center">
-            <Link href='/' className="py-[12px] px-[46px] text-[#2335cc] text-[24px] font-medium border-[2px] border-[#2335cc] rounded-[8px]">Daha çox</Link>
+            <Link href='/' className="py-[12px] px-[46px] text-[#1ea59a] text-[24px] font-medium border-[2px] border-[#1ea59a] rounded-[8px]">Daha çox</Link>
           </div>
       </div>
-      <div className="pt-[77px] pb-[120px]">
+      <div className="pt-[77px] ">
         <div className="relative flex justify-center items-center">
             <Image src={infoImg} alt="" className="absolute left-0 top-0 h-full z-[-1] "/>
             <div className="py-[40px] flex flex-col items-center bg-[#000] w-full bg-opacity-50">
               <span className="text-[44px] font-bold text-[#fff] w-[60%] mx-auto text-center">Yeniliklərdən anında xəbərdar olmaq üçün abunə olun</span>
               <div className="py-[7px] pe-[7px] ps-[18px] bg-[#fff] rounded-[8px] flex items-center justify-between mt-[40px] max-w-[400px]">
                 <input type="email"  id="email" placeholder="E-mailinizi daxil edin" className="outline-none text-[#828091]"/>
-                <Link href='/' className="px-[18px] py-[9px] bg-[#2335cc] rounded-[4px] text-[#fff] font-medium">Abonə ol</Link>
+                <Link href='/' className="px-[18px] py-[9px] bg-[#1ea59a] rounded-[4px] text-[#fff] font-medium">Abonə ol</Link>
               </div>
             </div>
-        </div>
-      </div>
-      <div className="px-[80px] py-[60px] bg-[#f5f6fd] flex flex-col">
-        <div className="flex flex-col items-center ">
-            <span className="text-[36px] font-semibold text-[#050123] ">Xəbərlər</span>
-            <p className="mt-[10px] text-[#828091] text-[18px] font-medium ">Hərracı hara etməyə qərar vermək  və ən son xəbərləri bilmək üçün  </p>
-        </div>
-        <div className="grid grid-cols-3 gap-[32px] my-[60px]">
-          {
-            aboutData.map(item =>{
-              return <NewsCard key={item}/>
-            })
-          }
-        </div>
-        <div className="flex justify-center">
-          <Link href='/' className="text-[#2335cc] text-[24px] font-medium py-[12px] px-[46px] border-[2px] border-[#2335cc] rounded-[8px]">Daha çox</Link>
         </div>
       </div>
       <div className="px-[80px] py-[120px] bg-[#fff] grid grid-cols-4 gap-[32px] ">
