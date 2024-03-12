@@ -9,10 +9,12 @@ import indicatorIcon1 from '../public/svgs/indicator-icon1.svg'
 import indicatorIcon2 from '../public/svgs/indicator-icon2.svg'
 import indicatorIcon3 from '../public/svgs/indicator-icon3.svg'
 import indicatorIcon4 from '../public/svgs/indicator-icon4.svg'
+import homeTitle from '../public/svgs/home-title.svg'
 import sticker1 from '../public/imgs/sticker-img1.jpeg'
 import sticker2 from '../public/imgs/sticker-img2.jpeg'
 import sticker3 from '../public/imgs/sticker-img3.jpeg'
 import sticker4 from '../public/imgs/sticker-img4.jpeg'
+import homeImg from '../public/imgs/home-img.png'
 import Image from "next/image";
 import Card from "@/components/card";
 import AboutCard from "@/components/aboutCard";
@@ -24,15 +26,19 @@ export default function Home() {
   const aboutData = [1,2,3]
   return (
     <div className="w-full">
-      <div className="w-full px-[80px] pt-[15px] pb-[25px] bg-[#eefafa]">
+      <div className="w-full flex justify-between px-[80px] pt-[145px] pb-[35px] bg-[#eefafa]">
         <div className="flex flex-col items-start w-1/2">
           <span className="text-[#1EA59A] text-[20px] font-medium">HƏRRACIN FAVORİ MƏTKƏZİ</span>
           <span className="text-[36px] font-medium text-[#050123] me-[95px]">Bənzərsiz məhsulların axtarırsınız? İndi qoşulun və ən yaxşı təklifləri əldə edin!</span>
           <span className="text-[#44415A] mt-[16px]">Dəyərli istifadəçilərimizə xüsusi təcrübə təqdim etmək üçün buradayıq! Onlayn auksionlarla dolu maraqlı dünyaya addım atın və istədiyiniz əşyaları ən yaxşı qiymətlərlə əldə edin.</span>
           <Link href='/' className="px-[40px] py-[15px] font-bold text-[24px] text-[#fff] rounded-[8px] bg-[#1EA59A] mt-[50px]">Elə indi başla</Link>
         </div>
-        <div>
-
+        <div className="flex items-end w-1/2">
+          <Image src={homeTitle} alt="" className="translate-x-[90px] translate-y-[30px] z-50"/>
+          <div className=" relative">
+            <div className="bg-gradient-to-t from-[#aaf0eb] to-[#1ea59a] rotate-[146deg] w-[430px] h-[430px] rounded-[430px] relative"></div>
+            <Image src={homeImg} alt="home img" className="z-30 absolute left-0 bottom-0 w-[475px] h-[574px]"/>
+          </div>
         </div>
       </div>
       <div className="px-[80px] py-[85px] grid grid-cols-4 gap-[32px] ">
