@@ -53,12 +53,12 @@ const layout = ({children}) => {
       </div>
       <div className='px-[80px] mt-[60px] mb-[130px] flex gap-[32px] items-start'>
         <div className='w-1/4 flex flex-col gap-y-[30px]'>
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hesab Təfərrüatları</Link> 
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Bank Məlumatları</Link> 
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Şifrə Dəyişikliyi</Link> 
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Aktiv Hərraclar</Link> 
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Qazanılmış Hərraclar</Link> 
-            <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hərrac Fəaliyyəti</Link> 
+            <Link href='/profile' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hesab Təfərrüatları</Link> 
+            <Link href='/profile/bank-info' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Bank Məlumatları</Link> 
+            <Link href='/profile/change-password' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Şifrə Dəyişikliyi</Link> 
+            <Link href='/profile/active-harrac' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Aktiv Hərraclar</Link> 
+            <Link href='/profile/won-harrac' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Qazanılmış Hərraclar</Link> 
+            <Link href='/profile/activity-harrac' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hərrac Fəaliyyəti</Link> 
             <Link href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#EF3340]'>Hesabdan Çıxış</Link> 
         </div>
         <div className='w-3/4'>

@@ -23,7 +23,7 @@ import IndicatorCard from "@/components/indicatorCard";
 
 export default function Home() {
   const prductData = [1, 2, 3, 4]
-  const aboutData = [1,2,3]
+  const aboutData = [1, 2, 3]
   return (
     <div className="w-full">
       <div className="w-full flex justify-between px-[80px] pt-[145px] pb-[35px] bg-[#eefafa]">
@@ -33,35 +33,34 @@ export default function Home() {
           <span className="text-[#44415A] mt-[16px]">Dəyərli istifadəçilərimizə xüsusi təcrübə təqdim etmək üçün buradayıq! Onlayn auksionlarla dolu maraqlı dünyaya addım atın və istədiyiniz əşyaları ən yaxşı qiymətlərlə əldə edin.</span>
           <Link href='/' className="px-[40px] py-[15px] font-bold text-[24px] text-[#fff] rounded-[8px] bg-[#1EA59A] mt-[50px]">Elə indi başla</Link>
         </div>
-        <div className="flex items-end w-1/2">
-          <Image src={homeTitle} alt="" className="translate-x-[90px] translate-y-[30px] z-50"/>
-          <div className=" relative">
-            <div className="bg-gradient-to-t from-[#aaf0eb] to-[#1ea59a] rotate-[146deg] w-[430px] h-[430px] rounded-[430px] relative"></div>
-            <Image src={homeImg} alt="home img" className="z-30 absolute left-0 bottom-0 w-[475px] h-[574px]"/>
+        <div className="flex items-end min-w-1/2 ">
+          <Image src={homeTitle} alt="" className=" z-50" />
+          <div className="translate-x-[-90px] bg-gradient-to-t from-[#aaf0eb] to-[#1ea59a] flex justify-center rotate-[146deg] min-w-[500px] h-[500px] overflow-hidden rounded-[430px] ">
+            <Image src={homeImg} alt="home img" className="w-[380px] h-[450px] translate-y-[-15px] rotate-[214deg]" />
           </div>
         </div>
       </div>
       <div className="px-[80px] py-[85px] grid grid-cols-4 gap-[32px] ">
         <div className="relative">
-          <Image src={AntiquesImg} alt="Antiques img" className="w-full h-full"/>
+          <Image src={AntiquesImg} alt="Antiques img" className="w-full h-full" />
           <div className="absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-25 rounded-[16px] flex items-center justify-center">
             <span className="bg-[#000] bg-opacity-50 px-[44px] py-[12px] text-[24px] font-bold text-[#fff] rounded-[8px]">Antiques</span>
           </div>
         </div>
         <div className="relative">
-          <Image src={CarsImg} alt="Cards img" className="w-full h-full"/>
+          <Image src={CarsImg} alt="Cards img" className="w-full h-full" />
           <div className="absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-25 rounded-[16px] flex items-center justify-center">
             <span className="bg-[#000] bg-opacity-50 px-[44px] py-[12px] text-[24px] font-bold text-[#fff] rounded-[8px]">Cars</span>
           </div>
         </div>
         <div className="relative">
-          <Image src={ElectronicsImg} alt="Electronics img" className="w-full h-full"/>
+          <Image src={ElectronicsImg} alt="Electronics img" className="w-full h-full" />
           <div className="absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-25 rounded-[16px] flex items-center justify-center">
             <span className="bg-[#000] bg-opacity-50 rounded-[8px] px-[44px] py-[12px] text-[24px] font-bold text-[#fff]">Electronics</span>
           </div>
         </div>
         <div className="relative">
-          <Image src={AccessioriesImg} alt="Accessiories img" className="w-full h-full"/>
+          <Image src={AccessioriesImg} alt="Accessiories img" className="w-full h-full" />
           <div className="absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-25 rounded-[16px] flex items-center justify-center">
             <span className="px-[44px] py-[12px] text-[24px] text-[#fff] bg-[#000] bg-opacity-50 font-bold rounded-[8px]">Accessiories</span>
           </div>
@@ -82,10 +81,10 @@ export default function Home() {
           <Link href='/announcement' className="mt-[40px] px-[32px] py-[16px] rounded-[8px] bg-[#1ea59a] text-[#fff] text-[16px] font-medium">Hərrac elan et</Link>
         </div>
         <div className="">
-          <Image src={sticker1} alt="sticker-1" className="w-[100px] h-[100px] rounded-[100px] absolute left-[172px] top-[151px]"/>
-          <Image src={sticker2} alt="sticker-2" className="w-[50px] h-[50px] rounded-[100px] absolute left-[222px] top-[427px]"/>
-          <Image src={sticker3} alt="sticker-3" className="w-[60px] h-[60px] rounded-[200px] absolute right-[316px] top-[36px]"/>
-          <Image src={sticker4} alt="sticker-4" className="w-[120px] h-[120px] rounded-[100px] absolute right-[100px] top-[220px]"/>
+          <Image src={sticker1} alt="sticker-1" className="w-[100px] h-[100px] rounded-[100px] absolute left-[172px] top-[151px]" />
+          <Image src={sticker2} alt="sticker-2" className="w-[50px] h-[50px] rounded-[100px] absolute left-[222px] top-[427px]" />
+          <Image src={sticker3} alt="sticker-3" className="w-[60px] h-[60px] rounded-[200px] absolute right-[316px] top-[36px]" />
+          <Image src={sticker4} alt="sticker-4" className="w-[120px] h-[120px] rounded-[100px] absolute right-[100px] top-[220px]" />
           <div className="w-[20px] h-[20px] bg-[#1ea59a] rounded-[200px] absolute left-[120px] top-[350px]"></div>
           <div className="w-[20px] h-[20px] bg-[#FF6B00] rounded-[200px] absolute right-[291px] top-[477px]"></div>
         </div>
@@ -103,8 +102,8 @@ export default function Home() {
             </div>
             <div className="mt-[16px] grid grid-cols-4 gap-[32px]">
               {
-                prductData.map(item =>{
-                  return <Card key={item}/>
+                prductData.map(item => {
+                  return <Card key={item} />
                 })
               }
             </div>
@@ -116,8 +115,8 @@ export default function Home() {
             </div>
             <div className="mt-[16px] grid grid-cols-4 gap-[32px]">
               {
-                prductData.map(item =>{
-                  return <Card key={item}/>
+                prductData.map(item => {
+                  return <Card key={item} />
                 })
               }
             </div>
@@ -129,8 +128,8 @@ export default function Home() {
             </div>
             <div className="mt-[16px] grid grid-cols-4 gap-[32px]">
               {
-                prductData.map(item =>{
-                  return <Card key={item}/>
+                prductData.map(item => {
+                  return <Card key={item} />
                 })
               }
             </div>
@@ -141,51 +140,51 @@ export default function Home() {
         <div className="w-full bg-[#F5F6FD] ps-[80px] flex items-center gap-[212px]">
           <div className="py-[25px]">
             <div>
-            <span className="text-[36px] font-medium text-[#050123] ">İndi al</span>
-            <p className="pt-[8px] text-[18px] text-[#828091]">Programınıza uyğun olaraq təsviri sənət, dekorativ əşyalar, zərgərlik və saatlar alın və ya satın</p>
+              <span className="text-[36px] font-medium text-[#050123] ">İndi al</span>
+              <p className="pt-[8px] text-[18px] text-[#828091]">Programınıza uyğun olaraq təsviri sənət, dekorativ əşyalar, zərgərlik və saatlar alın və ya satın</p>
             </div>
             <div className="mt-[36px] mb-[15px]">
               <Link href='/' className="px-[26px] py-[13px] border-[1px] border-[#828091] rounded-[8px] text-[20px] font-medium text-[#050123]">Şəxsi satışlara baxın</Link>
             </div>
           </div>
           <div>
-            <Image src={nowBuy} alt="Now buy" className="max-w-[624px]"/>
+            <Image src={nowBuy} alt="Now buy" className="max-w-[624px]" />
           </div>
         </div>
       </div>
       <div className="px-[80px] py-[60px]">
-          <div className="flex flex-col items-center">
-            <span className="text-[36px] font-semibold text-[#050123] ">Haqqımızda Dedikləri</span>
-            <p className="pt-[10px] text-[18px] font-medium text-[#828091] w-[70%] mx-auto text-center">Növbəti hərracı hara etməyi qərar vermık üçün HERRAC.ORG vebsaytından istifadə edən istifadəçilərin rəyləri ilə maraqlanırsınız? Gəlin aşağıda yoxlayın!</p>
-          </div>
-          <div className="py-[60px] grid grid-cols-3 gap-[32px] ">
-            {
-              aboutData.map(item =>{
-                return <AboutCard key={item} />
-              })
-            }
-          </div>
-          <div className="flex justify-center">
-            <Link href='/' className="py-[12px] px-[46px] text-[#1ea59a] text-[24px] font-medium border-[2px] border-[#1ea59a] rounded-[8px]">Daha çox</Link>
-          </div>
+        <div className="flex flex-col items-center">
+          <span className="text-[36px] font-semibold text-[#050123] ">Haqqımızda Dedikləri</span>
+          <p className="pt-[10px] text-[18px] font-medium text-[#828091] w-[70%] mx-auto text-center">Növbəti hərracı hara etməyi qərar vermık üçün HERRAC.ORG vebsaytından istifadə edən istifadəçilərin rəyləri ilə maraqlanırsınız? Gəlin aşağıda yoxlayın!</p>
+        </div>
+        <div className="py-[60px] grid grid-cols-3 gap-[32px] ">
+          {
+            aboutData.map(item => {
+              return <AboutCard key={item} />
+            })
+          }
+        </div>
+        <div className="flex justify-center">
+          <Link href='/' className="py-[12px] px-[46px] text-[#1ea59a] text-[24px] font-medium border-[2px] border-[#1ea59a] rounded-[8px]">Daha çox</Link>
+        </div>
       </div>
       <div className="pt-[77px] ">
         <div className="relative flex justify-center items-center">
-            <Image src={infoImg} alt="" className="absolute left-0 top-0 h-full z-[-1] "/>
-            <div className="py-[40px] flex flex-col items-center bg-[#000] w-full bg-opacity-50">
-              <span className="text-[44px] font-bold text-[#fff] w-[60%] mx-auto text-center">Yeniliklərdən anında xəbərdar olmaq üçün abunə olun</span>
-              <div className="py-[7px] pe-[7px] ps-[18px] bg-[#fff] rounded-[8px] flex items-center justify-between mt-[40px] max-w-[400px]">
-                <input type="email"  id="email" placeholder="E-mailinizi daxil edin" className="outline-none text-[#828091]"/>
-                <Link href='/' className="px-[18px] py-[9px] bg-[#1ea59a] rounded-[4px] text-[#fff] font-medium">Abonə ol</Link>
-              </div>
+          <Image src={infoImg} alt="" className="absolute left-0 top-0 h-full z-[-1] " />
+          <div className="py-[40px] flex flex-col items-center bg-[#000] w-full bg-opacity-50">
+            <span className="text-[44px] font-bold text-[#fff] w-[60%] mx-auto text-center">Yeniliklərdən anında xəbərdar olmaq üçün abunə olun</span>
+            <div className="py-[7px] pe-[7px] ps-[18px] bg-[#fff] rounded-[8px] flex items-center justify-between mt-[40px] max-w-[400px]">
+              <input type="email" id="email" placeholder="E-mailinizi daxil edin" className="outline-none text-[#828091]" />
+              <Link href='/' className="px-[18px] py-[9px] bg-[#1ea59a] rounded-[4px] text-[#fff] font-medium">Abonə ol</Link>
             </div>
+          </div>
         </div>
       </div>
       <div className="px-[80px] py-[120px] bg-[#fff] grid grid-cols-4 gap-[32px] ">
-          <IndicatorCard img={indicatorIcon1} number="1000+" text="Xoşbəxt Müştəri"/>
-          <IndicatorCard img={indicatorIcon2} number="100+" text="Təqdirəlayiq rəylər"/>
-          <IndicatorCard img={indicatorIcon3} number="100+" text="Qalib Müştəri"/>
-          <IndicatorCard img={indicatorIcon4} number="100+" text="Yeni Şərhlər"/>
+        <IndicatorCard img={indicatorIcon1} number="1000+" text="Xoşbəxt Müştəri" />
+        <IndicatorCard img={indicatorIcon2} number="100+" text="Təqdirəlayiq rəylər" />
+        <IndicatorCard img={indicatorIcon3} number="100+" text="Qalib Müştəri" />
+        <IndicatorCard img={indicatorIcon4} number="100+" text="Yeni Şərhlər" />
       </div>
     </div>
   );

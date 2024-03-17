@@ -6,6 +6,8 @@ import backIcon from '../../public/svgs/back-icon.svg'
 import starGray from '../../public/svgs/star-gray.svg'
 import downGray from '../../public/svgs/dawn-gray.svg'
 import Card from '@/components/card'
+import '../../public/css/style.css'
+
 const page = () => {
     const [harrac, setHarrac] = useState(false)
     const [category, setCategory] = useState(false)

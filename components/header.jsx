@@ -25,7 +25,7 @@ const Header = () => {
             <Link href='/about'>Haqqında</Link>
           </li>
           <li>
-            <Link href='/'>Məhsullar</Link>
+            <Link href='/products'>Məhsullar</Link>
           </li>
           <li>
             <Link href='/rules'>Qaydalar</Link>
