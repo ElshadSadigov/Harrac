@@ -55,9 +55,9 @@ const page = () => {
                     </div>
                     <div className='flex flex-col'>
                         <label htmlFor="Hərracın şəkili" className='text-[18px] text-[#44415a]'>Hərracın şəkili</label>
-                        <input type="text" id='Hərracın şəkili' 
+                        <input type="file" id='Hərracın şəkili' 
                         placeholder='Hərracın şəkili daxil edin'
-                        className='px-[20px] py-[16px] mt-[10px] outline-none border-[1px] border-[#C1BFC8] rounded-[8px] text-[16px] '
+                        className='px-[20px] py-[16px] mt-[10px] outline-none border-[1px] border-[#C1BFC8] rounded-[8px] text-[16px] cursor-pointer'
                         />
                     </div>
                     <div className='flex flex-col'>

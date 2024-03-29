@@ -27,8 +27,7 @@ const page = () => {
         </div>
         <div>
             <button className='px-[38px] py-[15px] bg-[#1ea59a] text-[18px] text-[#fff] rounded-[8px]'>Yadda saxla</button>
-        </div>
-    </div>
+        </div> </div>
   )
 }
 

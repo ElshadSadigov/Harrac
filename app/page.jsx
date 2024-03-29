@@ -31,7 +31,7 @@ export default function Home() {
           <span className="text-[#1EA59A] text-[20px] font-medium">HƏRRACIN FAVORİ MƏTKƏZİ</span>
           <span className="text-[36px] font-medium text-[#050123] me-[95px]">Bənzərsiz məhsulların axtarırsınız? İndi qoşulun və ən yaxşı təklifləri əldə edin!</span>
           <span className="text-[#44415A] mt-[16px]">Dəyərli istifadəçilərimizə xüsusi təcrübə təqdim etmək üçün buradayıq! Onlayn auksionlarla dolu maraqlı dünyaya addım atın və istədiyiniz əşyaları ən yaxşı qiymətlərlə əldə edin.</span>
-          <Link href='/' className="px-[40px] py-[15px] font-bold text-[24px] text-[#fff] rounded-[8px] bg-[#1EA59A] mt-[50px]">Elə indi başla</Link>
+          <Link href='/products' className="px-[40px] py-[15px] font-bold text-[24px] text-[#fff] rounded-[8px] bg-[#1EA59A] mt-[50px]">Elə indi başla</Link>
         </div>
         <div className="flex items-end min-w-1/2 ">
           <Image src={homeTitle} alt="" className=" z-50" />
@@ -144,7 +144,7 @@ export default function Home() {
               <p className="pt-[8px] text-[18px] text-[#828091]">Programınıza uyğun olaraq təsviri sənət, dekorativ əşyalar, zərgərlik və saatlar alın və ya satın</p>
             </div>
             <div className="mt-[36px] mb-[15px]">
-              <Link href='/' className="px-[26px] py-[13px] border-[1px] border-[#828091] rounded-[8px] text-[20px] font-medium text-[#050123]">Şəxsi satışlara baxın</Link>
+              <Link href='/profile/activity-harrac' className="px-[26px] py-[13px] border-[1px] border-[#828091] rounded-[8px] text-[20px] font-medium text-[#050123]">Şəxsi satışlara baxın</Link>
             </div>
           </div>
           <div>
@@ -165,7 +165,7 @@ export default function Home() {
           }
         </div>
         <div className="flex justify-center">
-          <Link href='/' className="py-[12px] px-[46px] text-[#1ea59a] text-[24px] font-medium border-[2px] border-[#1ea59a] rounded-[8px]">Daha çox</Link>
+          <Link href='/about' className="py-[12px] px-[46px] text-[#1ea59a] text-[24px] font-medium border-[2px] border-[#1ea59a] rounded-[8px]">Daha çox</Link>
         </div>
       </div>
       <div className="pt-[77px] ">

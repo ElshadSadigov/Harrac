@@ -40,7 +40,7 @@ const page = () => {
                         <Image src={offerImg5} alt='offer img' className='w-[100%] h-[100%]' />
                     </div>
                 </div>
-                <div className='w-1/2'>
+                <div className='w-1/2 flex flex-col gap-[32px]'>
                     <div>
                         <span className='text-[32px] font-medium text-[#050123]'>Rolex. Paslanmayan Saat</span>
                         <p className='mt-[8px] text-[16px] text-[#44415a]'>Rolex zərifliyi və mükəmməlliyi simvollaşdırır. Paslanmayan polad korpusları və üstün hərəkətləri ilə brend sadəcə bir saat deyil, lüksün simvoludur.</p>
@@ -49,7 +49,11 @@ const page = () => {
                             <span className='text-[16px] text-[#ff6b00]'>31 dekabr 2024-cü il, saat 12:00</span>
                         </div>
                     </div>
-                    <div className='flex flex-col my-[24px]'>
+                    <div className='flex items-center gap-[32px]'>
+                        <span className='text-[16px] text-[#000]'>EDİLƏN TƏKLİF:</span>
+                        <span className='text-[24px] font-bold text-[#00ff1a]'>36000</span>
+                    </div>
+                    <div className='flex flex-col '>
                         <span className='text-[16px] text-[#44415a]'>Cari təklif:</span>
                         <span className='text-[26px] font-semibold text-[#1ea59a]'>32,000 ₼ - 43,000 ₼</span>
                     </div>
@@ -74,7 +78,7 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[48px] flex items-center gap-[32px]'>
+                    <div className='flex items-center gap-[32px]'>
                         <button className='px-[32px] py-[16px] bg-[#1ea59a] rounded-[8px] text-[24px] text-[#fff] font-semibold'>Təklif al</button>
                         <div className='py-[10px] px-[32px] rounded-[8px] border-[1px] border-[#D9D9DE]'>
                             <button className='pe-[36px] py-[16px] border-r-[1px] border-[#CDCCD3]'>
