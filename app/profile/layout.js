@@ -15,12 +15,15 @@ import profile11 from '../../public/imgs/profile-11.png'
 import profile12 from '../../public/imgs/profile-12.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
-const layout = ({children}) => {
-  const [pageName, setPageName] = useState('Profil')
+const layout = ({children}) => {  
+  const pathname = usePathname();
+  const [pageName, setPageName] = useState('Profil');
   useEffect(()=>{
     setPageName(pageName)
-  }, [pageName])
+  }, [pageName]);
+
   return (
     <div>
       <div className='flex justify-between items-center px-[80px] py-[23px] border-b-[1px] border-[#D9D9DE]'>
@@ -61,28 +64,29 @@ const layout = ({children}) => {
             <Link
             onClick={()=>setPageName('Qazanılmış Hərraclar')} 
             href='/profile' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hesab Təfərrüatları</Link> 
+            className= {`${pathname === "/profile" ? "bg-[#DCF9FF] " : ""}w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}> 
+             Hesab Təfərrüatları</Link> 
             <Link 
             onClick={()=>setPageName('Bank Məlumatları')}
             href='/profile/bank-info' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Bank Məlumatları</Link> 
+            className={`${pathname === "/profile/bank-info" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}>Bank Məlumatları</Link> 
             <Link 
             onClick={()=>setPageName('Şifrə Dəyişikliyi')}
             href='/profile/change-password' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Şifrə Dəyişikliyi</Link> 
+            className={`${pathname === "/profile/change-password" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}>Şifrə Dəyişikliyi</Link> 
             <Link 
             onClick={()=>setPageName('Aktiv Hərraclar')} 
             href='/profile/active-harrac' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Aktiv Hərraclar</Link> 
+            className={`${pathname === "/profile/active-harrac" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}>Aktiv Hərraclar</Link> 
             <Link 
             onClick={()=>setPageName('Qazanılmış Hərraclar')} 
             href='/profile/won-harrac' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Qazanılmış Hərraclar</Link> 
+            className={`${pathname === "/profile/won-harrac" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}>Qazanılmış Hərraclar</Link> 
             <Link 
             onClick={()=>setPageName('Hərrac Fəaliyyəti')} 
             href='/profile/activity-harrac' 
-            className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]'>Hərrac Fəaliyyəti</Link> 
-            <Link  href='/' className='w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#EF3340]'>Hesabdan Çıxış</Link> 
+            className={`${pathname === "/profile/activity-harrac" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#050123]`}>Hərrac Fəaliyyəti</Link> 
+            <Link  href='/' className={`${pathname === "/" && "bg-[#DCF9FF]"} w-full px-[30px] py-[32px] shadow rounded-[16px] text-[20px] font-medium text-[#EF3340]`}>Hesabdan Çıxış</Link> 
         </div>
         <div className='w-3/4'>
             {children}
