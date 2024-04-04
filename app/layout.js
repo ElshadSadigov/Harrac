@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
+        {/* <Header/> */}
         <div className="mt-[90px]">
         {children}
         </div>
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );
