@@ -3,7 +3,6 @@ import backIcon from '../../public/svgs/back-icon.svg'
 import google from '../../public/svgs/Google.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaRegEyeSlash } from "react-icons/fa";
 const page = () => {
     return (
         <div>
@@ -28,10 +27,7 @@ const page = () => {
                 </div>
                 <div className='flex flex-col'>
                     <label htmlFor="Şifrə" className='text-[16px] text-[#44415a]'>Şifrə</label>
-                    <div className=' flex justify-between border-[1px] border-[#c1bfc8] mt-[5px] outline-none rounded-[8px] px-[16px] py-[10px] text-[15px]'>         
-                        <input type="password" id='Şifrə'  className='outline-none rounded-[8px] text-[15px] w-[240px]'/> 
-                        <FaRegEyeSlash  size={19} />
-                    </div>
+                    <input type="password" id='Şifrə'  className='border-[1px] border-[#c1bfc8] mt-[5px] outline-none rounded-[8px] px-[16px] py-[10px] text-[15px]'/>
                 </div>
             </div>
             <div className='mt-[16px] flex justify-between items-center'>
