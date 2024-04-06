@@ -9,7 +9,7 @@ const Page = () => {
             <Image src={ruleImg} alt='Qaydalar img' className='w-full'/>
             <div className='w-full absolute left-0 top-0 bg-[#000] bg-opacity-50 h-full'></div>
         </div>
-        <div className='px-[80px] pb-[120px] pt-[50px]'>
+        <div className='px-[30px] md:px-[80px] pb-[120px] pt-[50px]'>
             <div className='flex flex-col items-center'>
                 <span className='text-[32px] font-semibold text-[#050123]'>Qaydalar</span>
                 <p className='mt-[10px] text-[16px] text-[#050123] text-opacity-75'>Azərbaycanda maraqlı hərraclar və misilsiz onlayn tender təcrübəsi üçün əsas ünvanınız olan "HƏRRAC.ORG"-a xoş gəlmisiniz! </p>
