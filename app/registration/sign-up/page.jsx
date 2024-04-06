@@ -21,7 +21,7 @@ const page = () => {
                     <span className='text-[28px] font-extrabold text-[#050123]'>RAC.ORG</span>
                 </div>
             </div>
-            <div className='flex flex-col md:grid md:grid-cols-2 md:gap-x-[45px] md:gap-y-[40px]'>
+            <div className='flex flex-col md:grid md:grid-cols-2 md:gap-x-[45px] md:gap-y-[40px] gap-y-[30px]'>
                 <div className='flex flex-col'>
                     <label htmlFor="Ad" className='text-[16px] text-[#44415a]'>Ad</label>
                     <input type="text" id='Ad soyad' className='border-[1px] border-[#c1bfc8] mt-[5px] outline-none rounded-[8px] px-[16px] py-[10px] text-[15px]' />
