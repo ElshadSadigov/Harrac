@@ -11,17 +11,17 @@ const page = () => {
                 <Image src={backIcon} alt='back icon' />
                 <span className='text-[16px] font-medium text-[#050123]'>Geri</span>
             </Link>
-            <div className='my-[50px] flex justify-between items-start'>
-                <div className='flex flex-col'>
+            <div className='my-[50px] md:flex md:justify-between  md:items-start'>
+                <div className='flex justify-between  md:flex md:flex-col'>
                     <span className='text-[24px] font-semibold text-[#050123]'>Hesab yarat</span>
                     <span className='text-[14px] text-[#44415a] mt-[5px]'>Biznes və ya fərdi</span>
                 </div>
-                <div>
+                <div className='hidden md:block'>
                     <span className='text-[28px] font-extrabold text-[#1ea59a]'>HƏR</span>
                     <span className='text-[28px] font-extrabold text-[#050123]'>RAC.ORG</span>
                 </div>
             </div>
-            <div className='grid grid-cols-2 gap-x-[45px] gap-y-[40px]'>
+            <div className='flex flex-col md:grid md:grid-cols-2 md:gap-x-[45px] md:gap-y-[40px]'>
                 <div className='flex flex-col'>
                     <label htmlFor="Ad" className='text-[16px] text-[#44415a]'>Ad</label>
                     <input type="text" id='Ad soyad' className='border-[1px] border-[#c1bfc8] mt-[5px] outline-none rounded-[8px] px-[16px] py-[10px] text-[15px]' />
@@ -53,11 +53,11 @@ const page = () => {
                     Mən bütün <Link href='/' className='text-[#1ea59a]'>Şərtlər</Link> və <Link href='/' className='text-[#1ea59a]'>Məxfilik siyasəti</Link> ilə razıyam
                 </label>
             </div>
-            <div className='grid grid-cols-2 gap-[45px]'>
+            <div className='flex flex-col md:grid md:grid-cols-2 md:gap-[45px]'>
                 <button className='bg-[#1ea59a] rounded-[8px] w-full text-[16px] py-[10px] font-semibold text-[#fff]'>
-                    Daxil ol
+                Qeydiyyat
                 </button>
-                <button className='flex items-center justify-center gap-[8px] bg-[#2d3748] rounded-[8px] py-[10px] text-[#fff] font-semibold'>
+                <button className='flex items-center justify-center gap-[8px] bg-[#2d3748] rounded-[8px] py-[10px] text-[#fff] font-semibold mt-6 md:mt-0'>
                     <Image src={google} alt='google'/>
                     Google
                 </button>
