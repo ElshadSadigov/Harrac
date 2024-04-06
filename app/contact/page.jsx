@@ -23,17 +23,12 @@ const Page = () => {
         <div className='absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-50'>
         </div>
       </div>
-
         <div className='flex flex-col items-center '>
           <span className='text-[32px] font-semibold '>Əlaqə</span>
           <p className='text-[14px] md:text-[18px]  text-[#828091] font-medium px-[32px] md:w-[65%] mt-[20px] '>Söhbətə qoşulun, sual verin, nəyi bəyəndiyinizi və nəyi daha yaxşı edə biləcəyimizi söyləyin. Əlaqə həmişə xoşdur, belə ki, bizimlə əlaqə saxlamaqdan çekinmeyin.</p>
         </div>
-
-
       <div className=' px-[30px] md:px-[80px] mt-[75px]'>
-
         <div className='flex flex-col items-center  md:mt-[44px]  md:gap-[140px] md:grid md:grid-cols-2  md:justify-between'>
-
           <div>
             <div className='flex flex-col'>
               <span className='text-[14px] md:text-[18px] font-medium text-[#050123] ms-[12px]'>Əlaqə</span>
@@ -61,7 +56,6 @@ const Page = () => {
                 </li>
               </ul>
             </div>
-
             <div>
               <span className='text-[20px] font-medium text-[#050123]'>Vətəndaşların müraciətləri üçün:</span>
               <ul className='mt-[15px] flex flex-col gap-[10px]'>
@@ -77,8 +71,6 @@ const Page = () => {
             </div>
 
           </div>
-          
-
           <div>
             <iframe
              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16408.752340633346!2d49.84518124539898!3d40.370994615128964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da97b6f60f3%3A0x559b0d76c5587ad8!2zODAgw5x6ZXlpciBIYWPEsWLJmXlvdiwgQmFrxLE!5e0!3m2!1saz!2saz!4v1709306808750!5m2!1saz!2saz"
@@ -90,10 +82,7 @@ const Page = () => {
             ></iframe>
           </div>
        </div>
-
-
       </div>
-
        {/** 
        <div className='my-[100px] px-[80px]'>
 

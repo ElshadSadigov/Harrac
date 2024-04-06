@@ -15,20 +15,16 @@ const Page = () => {
                 <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>/</span>
                 <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>Haqqımızda</span>
             </div>
-
             <Link href='/' className='flex items-center gap-[5px]'>
                 <Image src={backIcon} alt='Back icon'/>
                 <span className='text-[14px] md:text-[16px] font-medium'>Geri</span>
             </Link>
-
         </div>
-
         <div className='w-full relative'>
             <Image src={aboutImg} alt='About img' className='w-full'/>
             <div className='absolute left-0 top-0 w-full h-full bg-[#000] bg-opacity-50'>
             </div>
         </div>
-
         <div className='mt-[50px] px-[30px]  md:px-[80px]'>
             
             <div className='flex flex-col items-center'>
@@ -36,9 +32,7 @@ const Page = () => {
                 <span className='text-[18px] font-semibold text-[#050123] my-[10px]'>Harracın unikal səyahəti ilə tanış olun</span>
                 <p className='text-[16px] text-[#05023]'>Azərbaycanda maraqlı hərraclar və misilsiz onlayn tender təcrübəsi üçün əsas ünvanınız olan "HƏRRAC.ORG"-a xoş gəlmisiniz! </p>
             </div>
-
-            <div className=' flex flex-col md:grid md:grid-cols-2 md:gap-[32px] mt-[50px] mb-[120px]'>
-                
+            <div className=' flex flex-col md:grid md:grid-cols-2 md:gap-[32px] mt-[50px] mb-[120px]'>      
                 <WeAboutCard
                 id='04.'
                 title='Ekspert Dəstəyi'
@@ -85,5 +79,4 @@ const Page = () => {
     </div>
   )
 }
-
 export default Page;
