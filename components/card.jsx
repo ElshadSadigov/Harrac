@@ -16,7 +16,7 @@ const Card = () => {
                 <Image src={cardSvg} alt='card svg' width={30} height={30}/>
                 <span className='text-[12px] font-medium text-[#fff] ms-[8px]'>Mery Jane</span>
             </div>
-            <div className='absolute left-0 bottom-0 w-full bg-[#000] bg-opacity-20 py-[9px] px-[21px] backdrop-blur flex items-center justify-between gap-[30px]'>
+            <div className='absolute left-0 bottom-0 w-full bg-[#000] bg-opacity-20 py-[9px] px-[21px] backdrop-blur flex items-center justify-between gap-[10px]'>
                 <div className='flex flex-col items-center'>
                     <span className='text-[#fff] font-medium'>240</span>
                     <span className='text-[12px] mt-[-5px] text-[#fff]'>Days</span>
