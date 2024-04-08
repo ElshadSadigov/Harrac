@@ -10,6 +10,7 @@ const page = () => {
                 <Image src={backIcon} alt='back icon' />
                 <span className='text-[16px] font-medium text-[#050123]'>Geri</span>
             </Link>
+            
             <div className='my-[50px] md:flex md:justify-between  md:items-start'>
                 <div className='flex justify-between  md:flex md:flex-col '>
                     <span className='text-[24px] font-semibold text-[#050123]'>Daxil ol</span>

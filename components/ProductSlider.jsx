@@ -1,16 +1,51 @@
-import Image from 'next/image'
 import React from 'react'
+import Slider from 'react-slick';
+import Image from 'next/image'
 import cardImg from '../public/imgs/card-img.png'
 import cardSvg from '../public/svgs/card-img.svg'
 import rightIcon from '../public/svgs/right-icon.svg'
 import lookIcon from '../public/svgs/look-icon.svg'
 import shareIcon from '../public/svgs/share-icon.svg'
 import Link from 'next/link'
-
-const Card = () => {
-  return (
-    <div className='hidden md:block'>
-        <div className='relative rounded-[8px] overflow-hidden'>
+const ProductSlider = ({ prductData }) => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+  
+    return (
+      <Slider {...settings}>
+        {prductData.map(item => (
+          <div key={item}>
+           <div className='relative rounded-[8px] overflow-hidden'>
             <Image src={cardImg} alt='Card img' className='w-full'/>
             <div className='absolute left-[10px] top-[10px] bg-[#000] bg-opacity-20 rounded-[100px] flex items-center py-[2px] ps-[3px] pe-[26px]'>
                 <Image src={cardSvg} alt='card svg' width={30} height={30}/>
@@ -55,8 +90,11 @@ const Card = () => {
                 </Link>
             </div>
         </div>
-    </div>
-  )
-}
+          </div>
+        ))}
+      </Slider>
+    );
+  };
+  
 
-export default Card
+export default ProductSlider

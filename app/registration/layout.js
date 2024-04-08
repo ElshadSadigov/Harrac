@@ -6,8 +6,11 @@ import registration from '../../public/svgs/registration.svg'
 const Layout = ({ children }) => {
   return (
     <div className='flex flex-col md:flex-row w-full md:flex md:items-center'>
+
       <div className='w-full md:w-[40%] bg-[#1ea59a] p-[80px]'>
+
         <div className='border-[1px] border-[#fff] rounded-[16px] bg-[#fff] bg-opacity-20 px-[30px] py-[33px] h-full'>
+
             <div className='flex flex-col items-center'>
                 <span className='text-[22px] font-semibold text-[#fff]'>Yenidən salam, xoş gəlmisiniz!</span>
                 <p className='text-center mt-[5px] text-[16px] text-[#fff]'>Bənzərsiz məhsulların axtarırsınız? İndi qoşulun və ən yaxşı təklifləri əldə edin!</p>
@@ -18,11 +21,15 @@ const Layout = ({ children }) => {
             <div className='mt-[69px]'>
                 <Image src={registration} alt='registration-img' />
             </div>
+            
         </div>
+
       </div>
+
       <div className='w-full p-[40px] md:w-[60%] md:p-[80px]'>
         {children}
       </div>
+
     </div>
   )
 }
