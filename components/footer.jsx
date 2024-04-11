@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='w-full lg:px-[80px] md:px-[40px] px-[16px] md:pt-[80px] pt-[30px] bg-[#050123]'>
+    <div className='w-full max-w-[1500px] mx-auto lg:px-[80px] md:px-[40px] px-[16px] md:pt-[80px] pt-[30px] bg-[#050123]'>
         <div className='pb-[60px] grid md:grid-cols-4 gap-y-[50px]'>
             <div className='flex flex-col'>
                 <div className='flex items-start'>

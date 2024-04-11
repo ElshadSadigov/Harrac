@@ -25,7 +25,7 @@ export default function Home() {
   const prductData = [1, 2, 3, 4]
   const aboutData = [1, 2, 3]
   return (
-    <div className="w-full">
+    <div className="w-full max-w-[1500px] mx-auto">
       <div className="w-full flex gap-[20px] md:flex-row flex-col justify-between md:px-[80px] px-[16px] md:pt-[75px] pt-[50px] pb-[50px] bg-[#eefafa]">
         <div className="flex flex-col md:items-start items-center md:w-1/2 w-full">
           <span className="text-[#1EA59A] font-medium md:text-[16px] text-[12px]">HƏRRACIN FAVORİ MƏTKƏZİ</span>
@@ -96,45 +96,52 @@ export default function Home() {
           <span className="md:text-[36px] text-[24px] font-semibold text-[#050123]">Hərracları kəşf et</span>
           <p className="mt-[10px] md:text-[18px] text-[16px] font-medium text-[#828091] mx-auto md:w-[70%] text-center">Növbəti hərracı hara etməyi istədiynizə qərar verin!</p>
         </div>
-        <div className="mt-[60px] flex flex-col gap-[90px]">
-          <div className="overflow-auto">
+        <div className="mt-[60px] flex flex-col md:gap-y-[90px] gap-y-[80px]">
+          <div>
             <div className="flex justify-between items-center">
               <span className="md:text-[24px] text-[18px] font-medium text-[#050123]">Trend</span>
               <Link href='/' className="md:text-[18px] text-[16px] font-medium text-[#1ea59a]">Hamsı</Link>
             </div>
-            <div className="mt-[16px] flex  gap-[32px] min-w-[1220px]">
-              {
-                prductData.map(item => {
-                  return <Card key={item} />
-                })
-              }
+            <div className="overflow-auto">
+              <div className="mt-[16px] flex justify-between gap-[32px] min-w-[1220px]">
+                {
+                  prductData.map(item => {
+                    return <Card key={item} />
+                  })
+                }
+              </div>
             </div>
           </div>
-          <div className="overflow-auto">
+          <div>
             <div className="flex justify-between items-center">
               <span className="md:text-[24px] text-[18px] font-medium text-[#050123]">Qarşıdan gələn hərraclar</span>
               <Link href='/' className="md:text-[18px] text-[16px] font-medium text-[#1ea59a]">Hamsı</Link>
             </div>
-            <div className="mt-[16px] flex gap-[32px] min-w-[1220px]">
-              {
-                prductData.map(item => {
-                  return <Card key={item} />
-                })
-              }
+            <div className="overflow-auto">
+              <div className="mt-[16px] flex justify-between gap-[32px] min-w-[1220px]">
+                {
+                  prductData.map(item => {
+                    return <Card key={item} />
+                  })
+                }
+              </div>
             </div>
           </div>
-          <div className="overflow-auto">
+          <div>
             <div className="flex justify-between items-center">
               <span className="md:text-[24px] text-[18px] font-medium text-[#050123]">Tövsiyə olunanlar</span>
               <Link href='/' className="md:text-[18px] text-[16px] font-medium text-[#1ea59a]">Hamsı</Link>
             </div>
-            <div className="mt-[16px] flex gap-[32px] min-w-[1220px]">
+            <div className="overflow-auto">
+
+            <div className="mt-[16px] flex justify-between gap-[32px] min-w-[1220px]">
               {
                 prductData.map(item => {
                   return <Card key={item} />
                 })
               }
             </div>
+              </div>
           </div>
         </div>
       </div>
