@@ -64,7 +64,7 @@ const layout = ({ children }) => {
       <div className='lg:px-[80px] md:px-[50px] px-[16px] mt-[60px] mb-[130px] flex md:flex-row flex-col gap-[32px] items-start'>
         <div className='md:w-1/4 w-full flex flex-col gap-y-[30px]'>
           <Link
-            onClick={() => setPageName('Qazanılmış Hərraclar')}
+            onClick={() => setPageName('Profile')}
             href='/profile'
             className={`${pathname === "/profile" ? "bg-[#dcf9ff] text-[#050123]" : "text-[#44415a]"} w-full px-[30px] py-[32px] shadow rounded-[16px] md:text-[20px] text-[16px] font-medium `}>
             Hesab Təfərrüatları</Link>

@@ -7,15 +7,15 @@ import Link from 'next/link'
 const Page = () => {
   return (
     <div>
-      <div className='px-[30px] md:px-[80px] py-[23px] bg-[#fff] flex items-center justify-between'>
+      <div className='px-[16px] md:px-[80px] py-[23px] bg-[#fff] flex items-center justify-between'>
         <div className='flex items-center gap-[8px]'>
-          <span className='[text-16px] font-medium text-[#050123]'>Ana səhifə</span>
-          <span className='[text-16px] font-medium text-[#050123]'>/</span>
-          <span className='[text-16px] font-medium text-[#050123]'>Əlaqə</span>
+          <span className='md:[text-16px] text-[14px] font-medium text-[#050123]'>Ana səhifə</span>
+          <span className='md:[text-16px] text-[14px] font-medium text-[#050123]'>/</span>
+          <span className='md:[text-16px] text-[14px] font-medium text-[#050123]'>Əlaqə</span>
         </div>
         <Link href='/' className='flex items-center gap-[5px]'>
           <Image src={backIcon} alt='Back icon' />
-          <span className='text-[16px] font-medium text-[#050123]'>Geri</span>
+          <span className='md:text-[16px] text-[14px] font-medium text-[#050123]'>Geri</span>
         </Link>
       </div>
       <div className='relative w-full '>

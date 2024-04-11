@@ -1,15 +1,28 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import ruleImg from '../../public/imgs/about-img.png'
+import backIcon from '../../public/svgs/back-icon.svg'
 
 const Page = () => {
   return (
     <div>
+        <div className='px-[16px] md:px-[80px] py-[23px] border-b-[1px] border-[#D9D9DE] flex items-center justify-between'>
+            <div className='flex items-center gap-[8px]'>
+                <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>Ana səhifə</span>
+                <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>/</span>
+                <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>Haqqımızda</span>
+            </div>
+            <Link href='/' className='flex items-center gap-[5px]'>
+                <Image src={backIcon} alt='Back icon'/>
+                <span className='text-[14px] md:text-[16px] font-medium'>Geri</span>
+            </Link>
+        </div>
         <div className='relative'>
             <Image src={ruleImg} alt='Qaydalar img' className='w-full'/>
             <div className='w-full absolute left-0 top-0 bg-[#000] bg-opacity-50 h-full'></div>
         </div>
-        <div className='px-[30px] md:px-[80px] pb-[120px] pt-[50px]'>
+        <div className='px-[16px] md:px-[80px] pb-[120px] pt-[50px]'>
             <div className='flex flex-col items-center'>
                 <span className='text-[32px] font-semibold text-[#050123]'>Qaydalar</span>
                 <p className='mt-[10px] text-[16px] text-[#050123] text-opacity-75'>Azərbaycanda maraqlı hərraclar və misilsiz onlayn tender təcrübəsi üçün əsas ünvanınız olan "HƏRRAC.ORG"-a xoş gəlmisiniz! </p>

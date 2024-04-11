@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className='flex flex-col gap-[50px] '>
+        <div className='flex flex-col md:gap-[50px] gap-[30px]'>
             <div className='flex md:justify-start justify-center'>
                 <span className='md:text-[26px] text-[22px] font-medium text-[#050123]'>Hesab Təfərrüatları</span>
             </div>

@@ -17,7 +17,7 @@ const page = () => {
     const [price, setPrice] = useState(false)
     const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
     return (
-        <div className='pb-[120px]'>
+        <div className='pb-[120px] max-w-[1500px] mx-auto w-full'>
             <div className='flex items-center justify-between md:px-[80px] px-[20px] py-[23px] border-b-[1px] border-[#D9D9DE]'>
                 <div className='flex items-center gap-[5px]'>
                     <span className='md:text-[16px] text-[14px] font-medium text-[#050123]'>Ana səhifə</span>
@@ -29,7 +29,7 @@ const page = () => {
                     <span className='md:text-[16px] text-[14px] font-medium text-[#050123]'>Geri</span>
                 </Link>
             </div>
-            <div className='md:px-[80px] px-[20px] flex md:flex-row flex-col items-start gap-[32px] mt-[30px]'>
+            <div className='md:px-[80px] px-[20px] flex md:flex-row flex-col items-start lg:gap-[32px] gap-[20px] mt-[30px]'>
                 <div className='md:w-1/4 w-full'>
                     <div className='flex justify-between items-center'>
                         <span className='text-[16px] font-medium text-[#44415a]'>110 Məhsul</span>
@@ -154,7 +154,7 @@ const page = () => {
                             <Image src={downGray} alt='down gray' />
                         </div>
                     </div>
-                    <div className='grid xl:grid-cols-3 sm:grid-cols-2 gap-[32px] mt-[32px]'>
+                    <div className='flex flex-wrap justify-center gap-[32px] mt-[32px] w-full'>
                         {
                             data.map(item => {
                                 return <Card key={item} />

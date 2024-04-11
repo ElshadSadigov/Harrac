@@ -13,7 +13,7 @@ import Link from 'next/link'
 const Header = () => {
   const [searchShow, setSearchShow] = useState(false)
   return (
-    <div className='bg-[#eefafa] py-[23px] px-[80px] border-b-[1px] border-[#d9d9de] fixed z-[999] left-0 top-0 w-full mx-auto flex justify-between items-center'>
+    <div className='bg-[#eefafa] py-[23px] px-[80px] border-b-[1px] border-[#d9d9de] fixed z-[999] left-[50%] top-0 translate-x-[-50%] w-full max-w-[1500px] mx-auto flex justify-between items-center'>
       <Link href='/' className='flex items-start'>
           <span className='font-extrabold text-[30px] text-[#1EA59A]'>HƏR</span>
           <span className='font-extrabold text-[30px] text-[#050123]'>RAC.ORG</span>

@@ -8,8 +8,7 @@ import WeAboutCard from '@/components/weAboutCard'
 const Page = () => {
   return (
     <div>
-        <div className='px-[30px] md:px-[80px] py-[23px] border-b-[1px] border-[#D9D9DE] flex items-center justify-between'>
-
+        <div className='px-[16px] md:px-[80px] py-[23px] border-b-[1px] border-[#D9D9DE] flex items-center justify-between'>
             <div className='flex items-center gap-[8px]'>
                 <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>Ana səhifə</span>
                 <span className='text-[14px] md:text-[16px] font-medium text-[#050123]'>/</span>

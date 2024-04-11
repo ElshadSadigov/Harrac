@@ -8,7 +8,7 @@ const page = () => {
       <div className='flex md:justify-start justify-center'>
         <span className='md:text-[26px] text-[22px] text-[#050123] font-medium'>Aktiv hərraclar</span>
       </div>
-      <div className='grid xl:grid-cols-3 sm:grid-cols-2 gap-x-[32px] gap-y-[32px] md:mt-[50px] mt-[30px]'>
+      <div className='flex flex-wrap justify-center gap-x-[32px] gap-y-[32px] md:mt-[50px] mt-[30px]'>
         {
           data.map(item => {
             return <Card key={item} />
