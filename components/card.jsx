@@ -10,7 +10,7 @@ import Link from 'next/link'
 const Card = () => {
   return (
     <div>
-        <div className='relative rounded-[8px] overflow-hidden'>
+        <div className='relative rounded-[8px] overflow-hidden w-[300px]'>
             <Image src={cardImg} alt='Card img' className='w-full'/>
             <div className='absolute left-[10px] top-[10px] bg-[#000] bg-opacity-20 rounded-[100px] flex items-center py-[2px] ps-[3px] pe-[26px]'>
                 <Image src={cardSvg} alt='card svg' width={30} height={30}/>

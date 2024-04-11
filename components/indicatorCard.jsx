@@ -3,7 +3,7 @@ import React from 'react'
 
 const IndicatorCard = ({img, number, text}) => {
   return (
-    <div className='shadow-xl rounded-[16px] px-[36px] py-[35px] flex items-center gap-[20px]'>
+    <div className='shadow-xl rounded-[16px] px-[15px] py-[35px] flex items-center gap-[20px]'>
       <div>
         <Image src={img} alt='img' className='w-[70px] h-[70px]'/>    
       </div>

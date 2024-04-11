@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const AboutCard = () => {
   return (
-    <div className='shadow-2xl px-[75px] py-[40px] rounded-[24px] flex flex-col items-center'>
+    <div className='shadow-2xl xl:px-[75px] lg:px-[60px] md:px-[40px] px-[25px] py-[40px] rounded-[24px] flex flex-col items-center'>
       <Image src={aboutTitle} alt='About title'/>
-      <p className='mt-[30px] font-medium text-[#828091] text-center'>Destinize membantu saya Mencari spot tempat wisata baru di Indonesia dengan Mudah</p>
+      <p className='mt-[30px] font-medium text-[#828091] text-center text-[16px]'>Destinize membantu saya Mencari spot tempat wisata baru di Indonesia dengan Mudah</p>
       <div className='flex gap-[5px] my-[15px]'>
         <Image src={fullStar} alt='Full star' />
         <Image src={fullStar} alt='Full star' />

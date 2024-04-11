@@ -12,8 +12,8 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='w-full px-[80px] pt-[80px] bg-[#050123]'>
-        <div className='pb-[60px] grid grid-cols-4'>
+    <div className='w-full lg:px-[80px] md:px-[40px] px-[16px] md:pt-[80px] pt-[30px] bg-[#050123]'>
+        <div className='pb-[60px] grid md:grid-cols-4 gap-y-[50px]'>
             <div className='flex flex-col'>
                 <div className='flex items-start'>
                     <span className='text-[#1EA59A] text-[30px] font-extrabold'>HƏR</span>
@@ -28,9 +28,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex md:justify-center'>
                 <div>
-                    <span className='text-[#fff] font-medium'>Vacib linklər</span>
+                    <span className='text-[#fff] font-medium text-[16px]'>Vacib linklər</span>
                     <ul className='grid grid-cols-1 gap-[10px] mt-[20px] text-[#fff] text-opacity-75 text-[14px]'>
                         <li><Link href="/">Hərrac</Link></li>
                         <li><Link href="/">Kateqoriya</Link></li>
@@ -40,9 +40,9 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex md:justify-center'>
                 <div>
-                    <span className='text-[#fff] font-medium'>Kömək və dəstək</span>
+                    <span className='text-[#fff] font-medium text-[16px]'>Kömək və dəstək</span>
                     <ul className='grid grid-cols-1 gap-[10px] mt-[20px] text-[#fff] text-opacity-75 text-[14px]'>
                         <li><Link href='/'>Haqqımızda</Link></li>
                         <li><Link href='/'>FAQ</Link></li>
@@ -52,10 +52,10 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex justify-end'>
+            <div className='flex md:justify-end'>
                 <div>
                     <div>
-                        <span className='text-[#fff] font-medium'>Əlaqə</span>
+                        <span className='text-[#fff] font-medium text-[16px]'>Əlaqə</span>
                         <ul className='grid grid-cols-1 gap-[10px] mt-[20px] text-[#fff] text-opacity-75 text-[14px]'>
                             <li><Link href='/'>Verdiyiniz feedbacklər bizim üçün önəmlidir.</Link></li>
                             <li><Link href='/'>Phone: +994 99 315 54 75</Link></li>
@@ -63,7 +63,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='mt-[10px]'>
-                        <span className='text-[#fff] font-medium'>İnstagramdan</span>
+                        <span className='text-[#fff] font-medium text-[16px]'>İnstagramdan</span>
                         <ul className='grid grid-cols-3 '>
                             <li><Image src={footerImg1} alt='Footer img-1'/></li>
                             <li><Image src={footerImg2} alt='Footer img-2'/></li>
